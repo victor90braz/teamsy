@@ -32,10 +32,7 @@
             </div>
 
             <div class="flex justify-center px-0 mt-16 sm:items-center sm:justify-between">
-                <ul>
-                    <li>Users = {{App\Models\User::count()}}</li>
-                    <li> where('tenant_id', 1) =  {{App\Models\User::where('tenant_id', 1)->count()}}</li>
-                </ul>
+                <livewire:department-form />
             </div>
 
             <div class="mt-16">
