@@ -14,8 +14,7 @@ class DepartmentForm extends Component
     public function submit()
     {
         Department::create([
-            'name' => $this->name,
-            'tenant_id' => session()->get('tenant_id')
+            'name' => $this->name
         ]);
 
         $this->success = true;
