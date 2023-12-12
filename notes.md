@@ -4520,3 +4520,11 @@ php artisan migrate
               $table->unsignedBigInteger(column:'tenant_id');
               $table->timestamps();
           });
+
+# test
+
+php artisan make:test TenantScopeTest
+
+phpunit.xml
+<env name="DB_CONNECTION" value="mysql"/>
+<env name="DB_DATABASE" value="teamsy_php_unit"/>
