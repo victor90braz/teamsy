@@ -17,9 +17,11 @@ class SetTenantIdInSession
 
     /**
      * Handle the event.
+     * @param object $event
+     * @return void
      */
     public function handle(object $event): void
     {
-        //
+        session()->put('tenant_id', $event->user->tenant_id);
     }
 }
