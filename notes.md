@@ -4528,3 +4528,8 @@ php artisan make:test TenantScopeTest
 phpunit.xml
 <env name="DB_CONNECTION" value="mysql"/>
 <env name="DB_DATABASE" value="teamsy_php_unit"/>
+
+add script in the package json
+"test": "php artisan test --filter="
+
+npm run test TenantScopeTest
